@@ -1,0 +1,18 @@
+.poem {
+  margin: 1em;
+  padding: 1em;
+  display: inline-block;
+  border-radius: .5em;
+  position: relative;
+}
+
+.poem p {
+  margin: 0;
+  padding: 0;
+}
+
+.poem .by {
+  margin-top: 1em;
+  position: absolute;
+  right: 0;
+}

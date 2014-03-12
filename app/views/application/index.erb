@@ -1,0 +1,10 @@
+<h1>Poems</h1>
+<p id="error-message" style="display:none;background-color:tomato; color: white; padding: .5em;"><%=@message%></p>
+<% if session[:username] %>
+  Hi <span id="username"><%= session[:username] %></span>! <a href="/logout">Logout</a>
+  <div class="input" style="margin-top: 1em; margin-bottom: 1em; padding: 1em; outline: 2px dashed; height: 6em; width: 50%" contenteditable="true"></div>
+  <div id="post" class="btn btn-default">Post Poem</div>
+  <div id="stream"></div>
+<% else %>
+  <a href="/login">Login</a>
+<% end %>
